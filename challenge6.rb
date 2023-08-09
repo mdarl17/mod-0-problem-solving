@@ -16,9 +16,7 @@
 string = "Turing offers the best instructors and training in the coding bootcamp space."
 
 def str_capitalize(str)
-    str.split(" ").map{|word|
-        word.capitalize
-    }.join(" ")
+    str.split.map(&:downcase).join(" ")
 end
 
 puts str_capitalize(string)
